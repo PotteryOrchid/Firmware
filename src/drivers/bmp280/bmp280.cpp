@@ -669,7 +669,7 @@ start_bus(struct bmp280_bus_option &bus)
 
 	bus.dev = new BMP280(interface, bus.devpath);
 
-	if (bus.dev != nullptr && OK != bus.dev->init()) {
+	if (bus.dev != nullptr || OK != bus.dev->init()) {
 		delete bus.dev;
 		bus.dev = NULL;
 		return false;
