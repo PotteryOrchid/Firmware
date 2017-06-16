@@ -89,7 +89,7 @@ private:
 	// Convert D1 (OSR=1024) 0x44
 	// Convert D1 (OSR=2048) 0x46
 	// Convert D1 (OSR=4096) 0x48
-	static constexpr uint8_t CMD_CONVERT_PRES = 0x44;
+	static constexpr uint8_t CMD_CONVERT_PRES = 0x46;
 
 	// D2 - temperature convert commands
 	// Convert D2 (OSR=256)  0x50
@@ -97,7 +97,7 @@ private:
 	// Convert D2 (OSR=1024) 0x54
 	// Convert D2 (OSR=2048) 0x56
 	// Convert D2 (OSR=4096) 0x58
-	static constexpr uint8_t CMD_CONVERT_TEMP = 0x54;
+	static constexpr uint8_t CMD_CONVERT_TEMP = 0x56;
 
 	uint8_t _current_cmd{CMD_CONVERT_PRES};
 
